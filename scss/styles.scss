@@ -1,0 +1,127 @@
+/* Importar archivos */
+@import '../utilidades/variables.scss';
+@import "../utilidades/mixin.scss";
+@import "../utilidades/extend.scss";
+@import "../utilidades/nesting.scss";
+@import "../utilidades/import.scss";
+@import "../utilidades/animaciones.scss";
+
+/* Estilos de reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  background-color: $color2;
+}
+
+/*media queries para mobile */
+
+@media (max-width:767px) {
+  .imagenes-inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .contenedor-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    max-width: 100%;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .imagenes-productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .imagenes-new-in {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .imagenes-liquidacion {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .contenedor-3 {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .hijo {
+    margin-bottom: 20px;
+  }
+
+  .mi-cuenta {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+/*media queries para tablet */
+
+@media (max-width:1024px) {
+  .imagenes-inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    height: auto;
+
+    justify-items: center;
+    align-items: center;
+  }
+
+  .contenedor-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    max-width: 100%;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .imagenes-productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .imagenes-new-in {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .imagenes-liquidacion {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* Importar archivos */
+/* Estilos generales */
+/* Estilos de mixins */
+/* Estilos anidados */
+header {
+  padding: 10px;
+  text-align: center; }
+
+h1 {
+  color: #eb3b76;
+  font-size: 300%; }
+
+h2 {
+  color: purple;
+  text-align: left;
+  margin: 10px;
+  padding: 10px; }
+
+.menu {
+  background-color: #cc8787;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto; }
+
+.menu .nav-item {
+  margin-right: 30px; }
+
+.menu .nav-link {
+  color: #1a1919;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px; }
+
+.contenedor {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh; }
+
+.imagen-1 {
+  position: relative;
+  margin: 7px;
+  padding: 5px;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 50px;
+  margin-left: 50px; }
+
+.imagen-2 {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100px; }
+
+h4 {
+  text-align: center; }
+
+footer h1 {
+  text-align: center; }
+
+.contenedor-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  justify-content: center;
+  background-color: #f5dcf5;
+  padding: 40px; }
+
+.hijo {
+  text-align: center;
+  background-color: #a33d5c;
+  margin-bottom: 50px;
+  padding: 20px; }
+  .hijo h3 {
+    color: white; }
+
+footer form {
+  text-align: center;
+  background-color: #a33d5c;
+  margin: 50px;
+  padding: 0px;
+  border-radius: 5px; }
+
+/* Estilos del index */
+.inicio {
+  color: black;
+  text-align: center; }
+
+.contenedor-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px; }
+
+.imagen-3 {
+  max-width: 100%;
+  max-height: 100%; }
+
+.contenedor-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  max-width: 100%;
+  height: auto;
+  justify-items: center;
+  align-items: center; }
+
+.imagenes-inicio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center; }
+
+.imagen-4 {
+  width: 300px;
+  margin: 10px;
+  display: block;
+  margin: auto; }
+
+.imagen-5 {
+  width: 200px;
+  margin: 10px;
+  border-bottom-left-radius: 10px #f5564b; }
+
+/* Estilos de productos */
+.imagen-6 {
+  width: 250px;
+  margin: 30px; }
+
+.imagenes-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center; }
+
+.imagenes-new-in {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center; }
+
+.imagen-7 {
+  width: 250px;
+  margin: 30px; }
+
+.imagenes-liquidacion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center; }
+
+.imagen-8 {
+  width: 250px;
+  margin: 30px; }
+
+/* Animaciones */
+.img {
+  position: relative;
+  display: inline-block; }
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.2em;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; }
+
+.img img {
+  transition: filter 0.3s ease-in-out; }
+
+.img:hover .text {
+  opacity: 1; }
+
+.img:hover img {
+  filter: brightness(0%);
+  background-color: #f75676; }
+
+/* Estilos para el logo */
+.imagen-2 {
+  transition: transform 0.3s ease; }
+
+/* Estilos para aplicar el zoom cuando el cursor está sobre el logo */
+.imagen-2:hover {
+  transform: scale(1.1); }
+
+/* Estilos generales para el enlace "Volver arriba" */
+.arriba {
+  display: inline-block;
+  background-color: #f881c7;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out; }
+  .arriba:hover {
+    background-color: #c720fa; }
+
+.menu .nav-link:hover {
+  background-color: #ddd; }
+
+/* Estilos de reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Estilos generales */
+body {
+  background-color: #f5dcf5; }
+
+/*media queries para mobile */
+@media (max-width: 767px) {
+  .imagenes-inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    height: auto;
+    justify-items: center;
+    align-items: center; }
+  .contenedor-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    max-width: 100%;
+    height: auto;
+    justify-items: center;
+    align-items: center; }
+  .imagenes-productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center; }
+  .imagenes-new-in {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center; }
+  .imagenes-liquidacion {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center; }
+  .contenedor-3 {
+    grid-template-columns: 1fr;
+    padding: 20px; }
+  .hijo {
+    margin-bottom: 20px; }
+  .mi-cuenta {
+    display: block;
+    max-width: 100%;
+    height: auto; } }
+
+/*media queries para tablet */
+@media (max-width: 1024px) {
+  .imagenes-inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    height: auto;
+    justify-items: center;
+    align-items: center; }
+  .contenedor-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    max-width: 100%;
+    height: auto;
+    justify-items: center;
+    align-items: center; }
+  .imagenes-productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center; }
+  .imagenes-new-in {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center; }
+  .imagenes-liquidacion {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center; } }

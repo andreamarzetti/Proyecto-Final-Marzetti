@@ -1,0 +1,9 @@
+/* Estilos de mixins */
+  @mixin center-text {
+    text-align: center;
+  }
+  
+  @mixin rounded-border($radius) {
+    border-radius: $radius;
+  }
+  

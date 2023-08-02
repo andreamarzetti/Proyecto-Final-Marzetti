@@ -1,0 +1,109 @@
+/* Estilos anidados */
+header {
+    padding: 10px;
+    @include center-text;
+  }
+  
+  h1 {
+    color: $color6;
+    font-size: 300%;
+  }
+  
+  h2 {
+    color: $color7;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .menu {
+    background-color: $color8;
+    border-radius:5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .menu .nav-item {
+      margin-right: 30px;
+  }
+  
+  .menu .nav-link {
+        color: #1a1919;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius:5px;
+  }
+    
+
+  .contenedor {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+  }
+  
+  .imagen-1 {
+    position: relative;
+    margin: 7px;
+    padding: 5px;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 50px;
+    margin-left: 50px;
+  }
+  
+  .imagen-2 {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100px;
+  }
+  
+  h4 {
+    @include center-text;
+  }
+  
+  footer h1 {
+    @include center-text;
+  }
+  
+  .contenedor-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-content: center;
+    background-color: $color2;
+    padding: 40px;
+  }
+  
+  .hijo {
+    @include center-text;
+    background-color: $color1;
+    margin-bottom: 50px;
+    padding: 20px;
+  
+    h3 {
+      color: white;
+    }
+  }
+
+  footer form {
+    text-align: center;
+    background-color: rgb(163, 61, 92);
+    margin: 50px;
+    padding: 0px;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,58 @@
+/* Animaciones */
+.img {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.2em;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .img img {
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .img:hover .text {
+    opacity: 1;
+  }
+  
+  .img:hover img {
+    filter: brightness(0%);
+    background-color: #f75676;
+  }
+  
+  /* Estilos para el logo */
+  .imagen-2 {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Estilos para aplicar el zoom cuando el cursor está sobre el logo */
+  .imagen-2:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Estilos generales para el enlace "Volver arriba" */
+  .arriba {
+    display: inline-block;
+    background-color: #f881c7;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  
+    &:hover {
+      background-color: #c720fa;
+    }
+  }
+  
+  .menu .nav-link:hover{
+    background-color: $color5;
+  }
